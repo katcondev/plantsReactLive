@@ -30,7 +30,7 @@ export default function PlantDB() {
 <div className="flex flex-row">
     {plants.length > 0 ? (
       plants.map((plant) => (
-        <div key={plant.id} className="max-w-sm rounded overflow-hidden shadow-lg transform transition duration-300 hover:scale-105">
+        <div key={plant.id} className="rounded overflow-hidden shadow-lg transform transition duration-300 hover:scale-105">
                 
                 <div className="px-6 py-4">
                   <div key={plant.id} className="font-bold text-xl mb-2">Name: {plant.fields.Name}</div>
