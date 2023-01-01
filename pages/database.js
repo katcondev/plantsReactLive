@@ -1,10 +1,10 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import PlantsList from '../components/plants'
-import Menu from '../components/Menu'
+import Menu from '../components/menu'
 import Footer from '../components/footer'
 
-export default function Home() {
+export default function Database() {
   return (
     <div>
       <Head>

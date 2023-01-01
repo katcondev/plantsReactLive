@@ -38,19 +38,19 @@ export default function PlantDB() {
        
          <div className="px-6 py-2">
            <div className="font-bold text-2xl mb-2">{plant.fields.ComName}</div>
-             <p className="text-base">
+             <p className="text-base py-2">
              <span className="font-bold">Personality:</span> {plant.fields.Personality}
              </p>
-             <p className="text-base">
+             <p className="text-base py-2">
              <span className="font-bold">Scientific Name:</span> {plant.fields.Name}
              </p>
-             <p className="text-base">
+             <p className="text-base py-2">
              <span className="font-bold">Type of Lighting:</span> {plant.fields.Lighting}
              </p>
-             <p className="text-base">
+             <p className="text-base py-2">
              <span className="font-bold">Water Care:</span> {plant.fields.WaCare}
              </p>
-             <p className="text-base">
+             <p className="text-base py-2">
              <span className="font-bold">Soil Care:</span> {plant.fields.SoCare}
              </p>
              <p className="text-base py-2">

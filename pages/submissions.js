@@ -1,10 +1,9 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import PlantsList from '../components/plants'
-import Menu from '../components/Menu'
+import Menu from '../components/menu'
 import Footer from '../components/footer'
 
-export default function Home() {
+export default function Subs() {
   return (
     <div>
       <Head>
@@ -17,13 +16,13 @@ export default function Home() {
       </header>
       <div>
         <h1 className='text-4xl text-center py-12 font-Novel uppercase'>
-          Plants Database
+          Plant Submissions
         </h1>   
       </div>
       <div>
-      <PlantsList  />
+      
       </div>
-      <footer><Footer /></footer>
+      <footer><Footer /></footer> 
     </div>
   )
 }
