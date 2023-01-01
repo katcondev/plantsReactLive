@@ -1,9 +1,9 @@
-const token = "key6J57nNGBVi4TJQ";
+const token = "keykEQO9bMo2Fukln";
 
 getApi();
 
 function getApi() {
-  const requestUrl = "https://api.airtable.com/v0/appFj2Envr91ItMKQ/plants";
+  const requestUrl = "https://api.airtable.com/v0/appFj2Envr91ItMKQ/Plants";
 
   fetch(requestUrl, {
     headers: {
@@ -21,3 +21,4 @@ function getApi() {
 
     .catch((error) => console.log("error", error));
 }
+
