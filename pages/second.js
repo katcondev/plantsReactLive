@@ -11,7 +11,7 @@ export default function PlantDB() {
       fetch(requestUrl, {
       headers: {
         "Content-Type": "application/json",
-        Authorization: `Bearer ${process.env.NEXT_PUBLIC_AT_KEY}`,
+        Authorization: `Bearer keykEQO9bMo2Fukln`,
       },
   })
       .then((res) => res.json())
