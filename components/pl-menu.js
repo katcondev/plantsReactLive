@@ -6,7 +6,7 @@ const navigation = [
     { name: 'DATABASE', href: '/database' },
   ]
   
-  export default function Example() {
+  export default function PlMenu() {
     return (
       <header className="bg-gray-dark">
         <nav className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8" aria-label="Top">

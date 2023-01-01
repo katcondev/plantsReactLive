@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import Menu from '../components/menu'
-import Footer from '../components/footer'
+import Menu from '../components/pl-menu'
+import Footer from '../components/pl-footer'
 
 export default function Subs() {
   return (
