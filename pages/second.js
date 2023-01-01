@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-const token = "keykEQO9bMo2Fukln";
+
 import Image from 'next/image';
 
 
@@ -12,7 +12,7 @@ export default function PlantDB() {
       fetch(requestUrl, {
       headers: {
         "Content-Type": "application/json",
-        Authorization: `Bearer ${token}`,
+        Authorization: `Bearer keykEQO9bMo2Fukln`,
       },
   })
       .then((res) => res.json())
