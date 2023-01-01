@@ -27,7 +27,7 @@ export default function PlantDB() {
     fetchData()
   }, [fetchData])
   return (
-<div className="flex cols-2">
+<div className="grid grid-cols-2 gap-x-4 gap-y-8 sm:grid-cols-3 sm:gap-x-6 lg:grid-cols-4 xl:gap-x-8">
     {plants.length > 0 ? (
       plants.map((plant) => (
         <div key={plant.id} className="rounded overflow-hidden shadow-lg transform transition duration-300 hover:scale-105">

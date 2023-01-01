@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import PlantsList from '../components/plants_AT'
+import PlantsList from '../components/plants'
 
 export default function Home() {
   return (
@@ -11,12 +11,15 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main>
+      <div>
         <h1 className='text-4xl text-center py-12'>
           Plants Database
         </h1>   
-      </main>
+      </div>
+      <div>
       <PlantsList  />
+      </div>
+      
     </div>
   )
 }
