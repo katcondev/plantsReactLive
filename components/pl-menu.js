@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 
 const navigation = [
     { name: 'PERSONALITY QUIZ', href: '/quiz' },
@@ -12,10 +13,9 @@ const navigation = [
         <nav className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8" aria-label="Top">
           <div className="flex w-full items-center justify-between border-b border-green py-6 lg:border-none">
             <div className="flex items-center">
-              <a href="/">
-                <span className="sr-only">Plants Project Live</span>
-                <Image className="h-10 w-auto" src="https://katcontrerasdev.github.io/thePlantsProject/assets/images/logo.svg" width={112} height={112} alt="logo" />
-              </a>
+              <Link href='/' passHref>
+                <Image className="h-10 w-auto" src="https://katcontrerasdev.github.io/thePlantsProject/assets/images/logo.svg" width={112} height={112} alt="Plants Project Live" />
+                </Link>
               <div className="ml-10 hidden space-x-8 lg:block">
                 {navigation.map((link) => (
                   <a key={link.name} href={link.href} className="text-base font-medium text-white hover:text-indigo-50">
