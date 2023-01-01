@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-
 import Image from 'next/image';
 
 
@@ -12,7 +11,7 @@ export default function PlantDB() {
       fetch(requestUrl, {
       headers: {
         "Content-Type": "application/json",
-        Authorization: `Bearer keykEQO9bMo2Fukln`,
+        Authorization: `Bearer ${process.env.AT_KEY}`,
       },
   })
       .then((res) => res.json())
