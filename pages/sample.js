@@ -1,5 +1,5 @@
 import React, { Component} from 'react';
-const token = "keykEQO9bMo2Fukln";
+const token = 'process.env.AT_TOKEN';
 import Image from 'next/image';
 import Head from 'next/head'
 import { data } from 'autoprefixer';

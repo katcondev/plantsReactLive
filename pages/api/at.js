@@ -1,9 +1,9 @@
-const token = "keykEQO9bMo2Fukln";
+const token = 'process.env.AT_TOKEN';
 
 getApi();
 
 function getApi() {
-  const requestUrl = "https://api.airtable.com/v0/appFj2Envr91ItMKQ/Plants";
+  const requestUrl = "https://api.airtable.com/v0/process.env.BASE_ID/Plants";
 
   fetch(requestUrl, {
     headers: {
