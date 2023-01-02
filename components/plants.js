@@ -6,7 +6,7 @@ export default function PlantDB() {
     let [plants, setPlants] = React.useState('');
 
     const fetchData = React.useCallback(() => {
-      const requestUrl = "https://api.airtable.com/v0/appFj2Envr91ItMKQ/Plants";
+      const requestUrl = "https://api.airtable.com/v0/process.env.NEXT_PUBLIC_BASE_ID/Plants";
 
       fetch(requestUrl, {
       headers: {

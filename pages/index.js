@@ -4,6 +4,8 @@ import PlantsList from '../components/plants'
 import Menu from '../components/pl-menu'
 import Footer from '../components/pl-footer'
 
+
+
 export default function Home() {
   return (
     <div className='h-screen'>
