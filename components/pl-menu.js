@@ -25,25 +25,20 @@ const navigation = [
               </div>
             </div>
             <div className="ml-10 space-x-4">
-              <a
-                href="/quiz"
-                className="inline-block rounded-md border border-transparent bg-green py-2 px-4 text-base font-medium text-white hover:bg-opacity-75"
-              >
-                LEARN
-              </a>
-              <a
-                href="/mentor"
-                className="inline-block rounded-md border border-transparent bg-white py-2 px-4 text-base font-medium text-green hover:bg-green hover:text-gray"
-              >
-                MENTOR
-              </a>
+            <Link href="/quiz" passHref>
+            <button className="inline-block rounded-md border border-transparent bg-green py-2 px-4 text-base font-medium text-white hover:bg-opacity-75">LEARN</button>
+            </Link>
+            <Link href="/mentor" passHref>
+            <button className="inline-block rounded-md border border-transparent bg-white py-2 px-4 text-base font-medium text-green hover:bg-green hover:text-gray">MENTOR</button>
+            </Link>
+            
             </div>
           </div>
           <div className="flex flex-wrap justify-center space-x-6 py-4 lg:hidden">
             {navigation.map((link) => (
-              <a key={link.name} href={link.href} className="text-base font-medium text-white hover:text-indigo-50">
+              <Link key={link.name} href={link.href} className="text-base font-medium text-white hover:text-indigo-50" passHref>
                 {link.name}
-              </a>
+              </Link>
             ))}
           </div>
         </nav>
