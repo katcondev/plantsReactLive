@@ -2,16 +2,17 @@ import React, { useEffect, useState } from "react";
 import Image from 'next/image';
 
 
+
 export default function PlantDB() {
     let [plants, setPlants] = React.useState('');
 
     const fetchData = React.useCallback(() => {
-      const requestUrl = "https://api.airtable.com/v0/process.env.NEXT_PUBLIC_BASE_ID/Plants";
+      const requestUrl = `https://api.airtable.com/v0/${process.env.NEXT_PUBLIC_BASE_ID}/Plants`;
 
       fetch(requestUrl, {
       headers: {
         "Content-Type": "application/json",
-        Authorization: `Bearer keykEQO9bMo2Fukln`,
+        Authorization: `Bearer ${process.env.NEXT_PUBLIC_AT_KEY}`,
       },
   })
       .then((res) => res.json())
