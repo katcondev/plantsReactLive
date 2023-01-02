@@ -1,12 +1,12 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useCallback } from "react";
 import Image from 'next/image';
 
 
 
 export default function PlantDB() {
-    let [plants, setPlants] = React.useState('');
+    let [plants, setPlants] = useState('');
 
-    const fetchData = React.useCallback(() => {
+    const fetchData = useCallback(() => {
       const requestUrl = `https://api.airtable.com/v0/${process.env.NEXT_PUBLIC_BASE_ID}/Plants`;
 
       fetch(requestUrl, {
@@ -25,7 +25,7 @@ export default function PlantDB() {
       });
   }, [ setPlants ]);
   
-  React.useEffect(() => {
+  useEffect(() => {
     fetchData()
   }, [fetchData])
  
@@ -35,7 +35,7 @@ export default function PlantDB() {
      plants.map((plant) => (
        <div key={plant.id} className="max-w-sm rounded overflow-hidden shadow-lg transform transition duration-300 hover:scale-105">
        
-       <Image key={plant.id} src={plant.fields.Image[0].url} width={384} height={255} layout="responsive" alt="list of plants" />
+       <Image key={plant.id} src={plant.fields.Image[0].url} width={plant.fields.Image[0].width} height={plant.fields.Image[0].height} layout="responsive" alt="list of plants" />
        
          <div className="px-6 py-2">
            <div className="font-bold text-2xl mb-2">{plant.fields.ComName}</div>
