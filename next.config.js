@@ -5,7 +5,7 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: ['v5.airtableusercontent.com', 'katcontrerasdev.github.io'],
+    domains: ['v5.airtableusercontent.com', 'katcontrerasdev.github.io', 'tailwindui.com'],
 },
   env: {
     NEXT_PUBLIC_AT_KEY: process.env.NEXT_PUBLIC_AT_KEY,
