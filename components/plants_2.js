@@ -1,6 +1,7 @@
 import React, { useEffect, useState, useCallback } from "react";
 import Image from 'next/image';
 import { table, minifyItems } from "../utils/Airtable";
+import Pllants from '../utils/atest'
 
 
 
@@ -19,16 +20,20 @@ export default function PlantDB() {
       .catch((error) => {
         console.log(error);
       });
-  }, [ setPlants, plants ]);
+  }, [ setPlants ]);
   
   useEffect(() => {
     fetchData()
   }, [fetchData])
  
   return (
+    
    <div className="mx-auto py-6 grid gap-4 grid-cols-1 md:grid-cols-1 lg:grid-cols-3 h-{400} ">
-     {plants.length > 0 ? (
-     plants.map((plant) => (
+     
+    
+     
+     {table.length > 0 ? (
+     table.map((plant) => (
        <div key={plant.id} className="max-w-sm rounded overflow-hidden shadow-lg transform transition duration-300 hover:scale-105">
        
        <Image key={plant.id} src={plant.fields.Image[0].url} width={plant.fields.Image[0].width} height={plant.fields.Image[0].height} layout="responsive" alt="list of plants" />
