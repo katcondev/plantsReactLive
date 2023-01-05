@@ -3,6 +3,7 @@ import Image from 'next/image'
 import Footer from '../components/pl-footer'
 import Menu from '../components/pl-menu'
 
+
 export default function PlQuiz() {
   return (
     <div className='h-screen'>
