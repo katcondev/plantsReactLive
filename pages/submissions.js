@@ -3,7 +3,7 @@ import Image from 'next/image'
 import Menu from '../components/pl-menu'
 import Footer from '../components/pl-footer'
 import Plform from '../components/pl-form'
-import Link from 'next/link'
+
 
 export default function Subs() {
   return (
@@ -23,7 +23,7 @@ export default function Subs() {
         <p>
               Discover and share your collection of house plants, connect with interesting people, and
               work together to help new plant parents in need.
-              I'm baby pok pok fingerstache 90's, vice artisan +1 pitchfork. Chambray shaman air plant selvage, banjo mlkshk
+              Im baby pok pok fingerstache 90s, vice artisan +1 pitchfork. Chambray shaman air plant selvage, banjo mlkshk
               cray migas yuccie brooklyn seitan raw denim lyft
               glossier narwhal. Sartorial mustache humblebrag snackwave. Selvage umami vape, DIY mlkshk locavore trust fund
               shaman try-hard direct trade fingerstache craft beer.
