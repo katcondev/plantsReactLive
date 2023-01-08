@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Menu from '../components/pl-menu'
 import Footer from '../components/pl-footer'
-import Plform from '../components/pl-form'
+import Plform from '../components/form'
 
 
 export default function Subs() {

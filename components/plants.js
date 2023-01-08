@@ -18,7 +18,6 @@ export default function PlantDB() {
       .then((res) => res.json())
       .then((data) => {
         setPlants(data.records);
-        // console.log(data);
       })
       .catch((error) => {
         console.log(error);

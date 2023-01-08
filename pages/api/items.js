@@ -1,6 +1,6 @@
 import { table, minifyItems } from "../../utils/Airtable";
 
-export default async (_req, res) => {
+export default async function GetPlant(_req, res) {
   try {
     const records = await table.select({}).firstPage();
     const minfiedItems = minifyItems(records);
