@@ -47,7 +47,7 @@ export default function ConPlan() {
   }
 
   if (submitted) {
-    return <p>We've received your message, thank you for contacting us!</p>;
+    return <p>We&apos;ve received your message, thank you for contacting us!</p>;
   }
 
   return (

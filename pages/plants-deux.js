@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import Link from "next/link";
+import Image from "next/image";
 
 export function PlantsCommunity({ id, fields }) {
   return (
     <div>
       {fields?.Image && (
-        <img width="400" height="400" src={fields.Image[0]?.url} />
+        <Image width="400" height="400" alt="photo of plant" src={fields.Image[0]?.url} />
       )}
       <a href={fields.Care}>
         <h2 className="text-lg font-semibold text-slate-500">{fields.Name}</h2>
