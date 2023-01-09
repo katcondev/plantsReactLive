@@ -13,7 +13,7 @@ export default function ConPlan() {
   function submit(e) {
     // This will prevent page refresh
     e.preventDefault();
-
+    
     axios
       .post(
         // replace this with your own unique endpoint URL
@@ -29,11 +29,15 @@ export default function ConPlan() {
             Accept: "application/json",
             "Content-Type": "application/json",
             Authorization: `Bearer ${process.env.NEXT_PUBLIC_AT_KEY}`,
+            
           }
+          
         }
+        
       )
       .then((res) => {
         // success http code
+        
         if (res.data.code === 200) {
           setSubmitted(true);
         } else {

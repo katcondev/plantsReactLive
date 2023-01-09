@@ -18,15 +18,16 @@ export default function Contact() {
         e.preventDefault()
         try {
             const response = await fetch(
-                `https://api.airtable.com/v0/${process.env.NEXT_PUBLIC_BASE_IDS}/test`,
+                `https://v1.nocodeapi.com/kcondev/airtable/chrThhPdsutJtraG?tableName=test`,
                 {
                     method: "post",
                     body: JSON.stringify([formData]),
+                    typecast: true,
                     headers: {
-                        "Content-Type": "application/json; charset=UTF-8",
-                        Authorization: `Bearer ${process.env.NEXT_PUBLIC_AT_KEY}`,
+                        "Content-Type": "application/json",
                     },
-                }
+                    
+                },
             )
             const json = await response.json()
             console.log("Success:", JSON.stringify(json))
