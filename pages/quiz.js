@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Footer from '../components/pl-footer'
 import Menu from '../components/pl-menu'
+import Contact from '../components/pl-form'
 
 
 export default function PlQuiz() {
@@ -19,6 +20,7 @@ export default function PlQuiz() {
         <h1 className='text-4xl text-center py-12 font-Novel uppercase'>
           Personality Quiz
         </h1>   
+        <Contact />
       </div>
       <div>
       

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import axios from "axios";
 
-export default function App() {
+export default function ConPlan() {
   const [name, setName] = useState("");
   const [message, setMessage] = useState("");
   const [email, setEmail] = useState("");

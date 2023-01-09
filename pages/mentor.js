@@ -3,6 +3,7 @@ import Image from 'next/image'
 import Menu from '../components/pl-menu'
 import Footer from '../components/pl-footer'
 import Link from 'next/link'
+import ConPlan from '../components/form'
 
 export default function Mentor() {
   return (
@@ -18,7 +19,8 @@ export default function Mentor() {
       <div>
         <h1 className='text-4xl text-center py-12 font-Novel uppercase'>
           Mentorship Application
-        </h1>   
+        </h1>  
+        <ConPlan /> 
       </div>
       <div>
      

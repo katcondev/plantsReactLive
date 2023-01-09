@@ -18,12 +18,12 @@ export default function Contact() {
         e.preventDefault()
         try {
             const response = await fetch(
-                `https://api.airtable.com/v0/apphid3mzUCCadQb6/test`,
+                `https://api.airtable.com/v0/${process.env.NEXT_PUBLIC_BASE_IDS}/test`,
                 {
                     method: "post",
                     body: JSON.stringify([formData]),
                     headers: {
-                        "Content-Type": "application/json",
+                        "Content-Type": "application/json; charset=UTF-8",
                         Authorization: `Bearer ${process.env.NEXT_PUBLIC_AT_KEY}`,
                     },
                 }
