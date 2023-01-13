@@ -48,10 +48,10 @@ export default function Example() {
                 <span className="sr-only">The Plants Project</span>
                 <Image
                   className="h-48 w-auto sm:h-10 green"
-                  src="/plants.svg"
-                  alt=""
-                  height={100}
-                  width={250}
+                  src="https://plants-react-live.vercel.app/plants.svg"
+                  alt="Plants Project Live"
+                  height={50}
+                  width={125}
                 />
               </a>
             </div>
@@ -67,10 +67,10 @@ export default function Example() {
               <Link href="/" className="text-base font-medium text-gray-500 hover:text-gray-900">
                 HOME
               </Link>
-              <Link href="/mentor" className="text-base font-medium text-gray-500 hover:text-gray-900">
+              <Link href="/" className="text-base font-medium text-gray-500 hover:text-gray-900">
                 MENTOR
               </Link>
-              <Link href="/submissions" className="text-base font-medium text-gray-500 hover:text-gray-900">
+              <Link href="/plants-deux" className="text-base font-medium text-gray-500 hover:text-gray-900">
                 SUBMISSIONS
               </Link>
               <Link href="/database" className="text-base font-medium text-gray-500 hover:text-gray-900">
@@ -109,10 +109,12 @@ export default function Example() {
               <div className="px-5 pt-5 pb-6">
                 <div className="flex items-center justify-between">
                   <div>
-                    <img
+                    <Image
                       className="h-8 w-auto"
-                      src="https://tailwindui.com/img/logos/mark.svg?color=green&shade=600"
-                      alt="Your Company"
+                      src="https://plants-react-live.vercel.app/plants.svg"
+                      alt="Plants Project Live"
+                      width={125}
+                      height={50}
                     />
                   </div>
                   <div className="-mr-2">
@@ -146,7 +148,7 @@ export default function Example() {
                   
                 </div>
                 <div>
-                  <Link href="/quiz" passHref>
+                  <Link href="/" passHref>
                   <button
                     
                     className="flex w-full items-center justify-center rounded-md border border-transparent bg-green-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-green-700"
