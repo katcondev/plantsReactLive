@@ -44,16 +44,19 @@ export default function Example() {
         <div className="mx-auto max-w-7xl px-6">
           <div className="flex items-center justify-between py-6 md:justify-start md:space-x-10">
             <div className="flex justify-start lg:w-0 lg:flex-1">
-              <a href="#">
+              <Link href="/">
+              <a>
                 <span className="sr-only">The Plants Project</span>
+                
                 <Image
                   className="h-48 w-auto sm:h-10 green"
                   src="https://plants-react-live.vercel.app/plants.svg"
                   alt="Plants Project Live"
-                  height={50}
-                  width={125}
+                  height={100}
+                  width={250}
                 />
-              </a>
+                </a>
+              </Link>
             </div>
             <div className="-my-2 -mr-2 md:hidden">
               <Popover.Button className="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-green-500">
@@ -80,10 +83,10 @@ export default function Example() {
               
             </Popover.Group>
             <div className="hidden items-center justify-end md:flex md:flex-1 lg:w-0">
-              <Link href="/quiz" passHref>
+              <Link href="/" passHref>
               <button
     
-                className="ml-8 inline-flex items-center justify-center whitespace-nowrap rounded-md border border-transparent bg-green-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-green-700"
+                className="ml-8 inline-flex items-center justify-center whitespace-nowrap rounded-md border border-transparent bg-green px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-green-700"
               >
                 QUIZ
               </button>
@@ -113,8 +116,8 @@ export default function Example() {
                       className="h-8 w-auto"
                       src="https://plants-react-live.vercel.app/plants.svg"
                       alt="Plants Project Live"
-                      width={125}
-                      height={50}
+                      width={250}
+                      height={100}
                     />
                   </div>
                   <div className="-mr-2">
@@ -124,25 +127,23 @@ export default function Example() {
                     </Popover.Button>
                   </div>
                 </div>
-                {/* <div className="mt-6">
-                  
-                </div> */}
+               
               </div>
               <div className="space-y-6 py-6 px-5">
                 <div className="grid grid-cols-2 gap-y-4 gap-x-8 uppercase">
-                  <Link href="#" className="text-base font-medium text-gray-900 hover:text-gray-700">
+                  <Link href="/" className="text-base font-medium text-gray-900 hover:text-gray-700">
                     HOME
                   </Link>
 
-                  <Link href="#" className="text-base font-medium text-gray-900 hover:text-gray-700">
+                  <Link href="/" className="text-base font-medium text-gray-900 hover:text-gray-700">
                     MENTOR
                   </Link>
 
-                  <Link href="#" className="text-base font-medium text-gray-900 hover:text-gray-700">
+                  <Link href="/" className="text-base font-medium text-gray-900 hover:text-gray-700">
                     SUBMISSIONS
                   </Link>
 
-                  <Link href="#" className="text-base font-medium text-gray-900 hover:text-gray-700">
+                  <Link href="/" className="text-base font-medium text-gray-900 hover:text-gray-700">
                     DATABASE
                   </Link>
                   
@@ -151,7 +152,7 @@ export default function Example() {
                   <Link href="/" passHref>
                   <button
                     
-                    className="flex w-full items-center justify-center rounded-md border border-transparent bg-green-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-green-700"
+                    className="flex w-full items-center justify-center rounded-md border border-transparent bg-green px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-green-700"
                   >
                     QUIZ
                   </button>

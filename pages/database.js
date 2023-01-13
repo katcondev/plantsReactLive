@@ -16,10 +16,11 @@ export default function Database() {
       <header>
         <Menu />
       </header>
-      <div>
+      <div className='container mx-auto'>
         <h1 className='text-4xl text-center py-12 font-Novel uppercase'>
           Collection Database
-        </h1>   
+        </h1>  
+        <p>Fetch request directly through airtable API</p> 
       </div>
       <div>
       <PlantsList  />
