@@ -29,7 +29,7 @@ export default function Subs() {
               shaman try-hard direct trade fingerstache craft beer.
               Freegan lomo street art, blue bottle locavore etsy trust fund offal squid godard marfa. </p>   
       </div>
-      <div>
+      <div className='container mx-auto'>
        <Plform />
       </div>
       <footer><Footer /></footer> 

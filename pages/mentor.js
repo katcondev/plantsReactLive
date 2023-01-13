@@ -16,7 +16,7 @@ export default function Mentor() {
       <header>
         <Menu />
       </header>
-      <div>
+      <div className='container mx-auto'>
         <h1 className='text-4xl text-center py-12 font-Novel uppercase'>
           Mentorship Application
         </h1>  
