@@ -9,6 +9,7 @@ import {
   XMarkIcon,
 } from '@heroicons/react/24/outline'
 import Link from 'next/link'
+import Image from 'next/image'
 
 const resources = [
   {
@@ -45,10 +46,12 @@ export default function Example() {
             <div className="flex justify-start lg:w-0 lg:flex-1">
               <a href="#">
                 <span className="sr-only">The Plants Project</span>
-                <img
-                  className="h-8 w-auto sm:h-10"
-                  src="https://tailwindui.com/img/logos/mark.svg?color=green&shade=600"
+                <Image
+                  className="h-48 w-auto sm:h-10 green"
+                  src="/plants.svg"
                   alt=""
+                  height={100}
+                  width={250}
                 />
               </a>
             </div>

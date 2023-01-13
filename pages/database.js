@@ -18,7 +18,7 @@ export default function Database() {
       </header>
       <div>
         <h1 className='text-4xl text-center py-12 font-Novel uppercase'>
-          Plants Database
+          Collection Database
         </h1>   
       </div>
       <div>
