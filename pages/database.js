@@ -17,7 +17,7 @@ export default function Database() {
         <Menu />
       </header>
       <div className='container mx-auto'>
-        <h1 className='text-4xl text-center py-12 font-Novel uppercase'>
+        <h1 className='text-3xl font-bold my-8 leading-tight'>
           Collection Database
         </h1>  
         <p>Fetch request directly through airtable API</p> 
