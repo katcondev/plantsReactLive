@@ -73,7 +73,7 @@ export default function Example() {
               <Link href="/" className="text-base font-medium text-gray-500 hover:text-gray-900">
                 MENTOR
               </Link>
-              <Link href="/plants-deux" className="text-base font-medium text-gray-500 hover:text-gray-900">
+              <Link href="/" className="text-base font-medium text-gray-500 hover:text-gray-900">
                 SUBMISSIONS
               </Link>
               <Link href="/database" className="text-base font-medium text-gray-500 hover:text-gray-900">
