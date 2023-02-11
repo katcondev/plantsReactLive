@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
-import PlantsList from "../components/plant";
+import PlantsList from "../components/searchPlants";
 import Footer from "../components/pl-footer";
 import Menu from "../components/pl-menu";
 
