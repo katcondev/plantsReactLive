@@ -2,6 +2,11 @@ import React, { useState } from "react";
 import Airtable from "airtable";
 import AWS from "aws-sdk";
 
+const awsKey = process.env.NEXT_PUBLIC_AWS_KEY;
+const awsAccess = process.env.NEXT_PUBLIC_AWS_ACCESS;
+const atKey = process.env.NEXT_PUBLIC_AT_KEY;
+const atBase = process.env.NEXT_PUBLIC_BASE_ID;
+
 const Form = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -45,8 +50,8 @@ const Form = () => {
     }
 
     const s3 = new AWS.S3({
-      accessKeyId: `{process.env.NEXT_PUBLIC_AWS_KEY}`,
-      secretAccessKey: `{process.env.NEXT_PUBLIC_AWS_KEY}`,
+      accessKeyId: awsKey,
+      secretAccessKey: awsAccess,
     });
 
     const file = image.file;
@@ -65,8 +70,8 @@ const Form = () => {
       const imageUrl = uploadResponse.Location;
 
       const base = new Airtable({
-        apiKey: `{process.env.NEXT_PUBLIC_AT_KEY}`,
-      }).base(`{process.env.NEXT_PUBLIC_BASE_ID}`);
+        apiKey: atKey,
+      }).base(atBase);
 
       const record = await base("Plants").create(
         {
