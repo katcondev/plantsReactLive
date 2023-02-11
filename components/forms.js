@@ -101,6 +101,19 @@ const Form = () => {
         content: "Error uploading image or creating record: " + error.message,
       });
     }
+
+    if (message.type === "success") {
+      setFormData({
+        name: "",
+        personality: "",
+        care: "",
+        comName: "",
+        lighting: "",
+        waCare: "",
+        soCare: "",
+      });
+      setImage({});
+    }
   };
 
   return (
@@ -235,6 +248,12 @@ const Form = () => {
       >
         Submit
       </button>
+      {message.type === "success" && (
+        <p className='mt-4 text-green-600'>{message.content}</p>
+      )}
+      {message.type === "failed" && (
+        <p className='mt-4 text-red-600'>{message.content}</p>
+      )}
     </form>
   );
 };
