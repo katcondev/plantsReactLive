@@ -11,36 +11,6 @@ import {
 import Link from "next/link";
 import Image from "next/image";
 
-const resources = [
-  {
-    name: "Help Center",
-    description:
-      "Get all of your questions answered in our forums or contact support.",
-    href: "#",
-    icon: LifebuoyIcon,
-  },
-  {
-    name: "Guides",
-    description:
-      "Learn how to maximize our platform to get the most out of it.",
-    href: "#",
-    icon: BookmarkSquareIcon,
-  },
-  {
-    name: "Events",
-    description:
-      "See what meet-ups and other events we might be planning near you.",
-    href: "#",
-    icon: CalendarIcon,
-  },
-  {
-    name: "Security",
-    description: "Understand how we take your privacy seriously.",
-    href: "#",
-    icon: ShieldCheckIcon,
-  },
-];
-
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
@@ -74,13 +44,7 @@ export default function Example() {
             </div>
             <Popover.Group as='nav' className='hidden space-x-10 md:flex'>
               <Link
-                href='/search'
-                className='text-base font-medium text-gray-500 hover:text-gray-900'
-              >
-                MENTOR
-              </Link>
-              <Link
-                href='/mentor'
+                href='/submissions'
                 className='text-base font-medium text-gray-500 hover:text-gray-900'
               >
                 SUBMISSIONS
@@ -166,7 +130,7 @@ export default function Example() {
                   </Link>
                 </div>
                 <div>
-                  <Link href='/' passHref>
+                  <Link href='/submissions' passHref>
                     <button className='flex w-full items-center justify-center rounded-md border border-transparent bg-green px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-green-700'>
                       QUIZ
                     </button>

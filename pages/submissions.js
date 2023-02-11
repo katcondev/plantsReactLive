@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Image from "next/image";
+import Sub from "../components/forms";
 import Menu from "../components/pl-menu";
 import Footer from "../components/pl-footer";
 
@@ -14,11 +14,11 @@ export default function Subs() {
       <header>
         <Menu />
       </header>
-      <div className='container mx-auto'>
+      <div className='container mx-auto h-2/3'>
         <h1 className='text-4xl text-center py-12 font-Novel uppercase'>
           Plant Submissions
         </h1>
-        <p>
+        <p className='text-xl font-Novel '>
           Discover and share your collection of house plants, connect with
           interesting people, and work together to help new plant parents in
           need. Im baby pok pok fingerstache 90s, vice artisan +1 pitchfork.
@@ -29,11 +29,12 @@ export default function Subs() {
           lomo street art, blue bottle locavore etsy trust fund offal squid
           godard marfa.{" "}
         </p>
+        <div className='container mx-auto'>
+          <Sub />
+        </div>
       </div>
-      <div className='container mx-auto'></div>
-      <footer>
-        <Footer />
-      </footer>
+
+      <Footer />
     </div>
   );
 }

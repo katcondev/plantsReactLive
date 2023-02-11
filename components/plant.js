@@ -37,27 +37,27 @@ const IndexPage = () => {
                 <div className='font-bold text-2xl mb-2'>
                   {record.fields.ComName}
                 </div>
-                <p className='text-base py-2'>
+                <p className=' font-Novel text-xl py-2'>
                   <span className='font-bold'>Personality:</span>{" "}
                   {record.fields.Personality}
                 </p>
-                <p className='text-base py-2'>
+                <p className=' font-Novel text-xl py-2'>
                   <span className='font-bold'>Scientific Name:</span>{" "}
                   {record.fields.Name}
                 </p>
-                <p className='text-base py-2'>
+                <p className=' font-Novel text-xl py-2'>
                   <span className='font-bold'>Type of Lighting:</span>{" "}
                   {record.fields.Lighting}
                 </p>
-                <p className='text-base py-2'>
+                <p className=' font-Novel text-xl py-2'>
                   <span className='font-bold'>Water Care:</span>{" "}
                   {record.fields.WaCare}
                 </p>
-                <p className='text-base py-2'>
+                <p className=' font-Novel text-xl py-2'>
                   <span className='font-bold'>Soil Care:</span>{" "}
                   {record.fields.SoCare}
                 </p>
-                <p className='text-base py-2'>
+                <p className=' font-Novel text-xl py-2'>
                   <span className='font-bold'>Care Instructions:</span>{" "}
                   {record.fields.Care}
                 </p>
