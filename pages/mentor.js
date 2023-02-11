@@ -1,8 +1,6 @@
 import Head from "next/head";
-import Image from "next/image";
 import Menu from "../components/pl-menu";
 import Footer from "../components/pl-footer";
-import Link from "next/link";
 import ConPlan from "../components/forms";
 
 export default function Mentor() {
