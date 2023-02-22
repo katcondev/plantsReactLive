@@ -66,7 +66,7 @@ const IndexPage = () => {
           </div>
         ))
       ) : (
-        <p className='text-center'>No data available</p>
+        <p className='text-center'>updating records...</p>
       )}
     </div>
   );

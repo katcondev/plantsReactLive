@@ -124,7 +124,7 @@ const SIndexPage = () => {
           ))
         ) : (
           <p className='text-center text-xl font-bold py-6'>
-            Updatiing records...
+            Updating records...
           </p>
         )}
       </div>

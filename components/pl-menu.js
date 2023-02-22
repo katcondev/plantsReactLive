@@ -1,13 +1,6 @@
 import { Fragment } from "react";
 import { Popover, Transition } from "@headlessui/react";
-import {
-  Bars3Icon,
-  BookmarkSquareIcon,
-  CalendarIcon,
-  LifebuoyIcon,
-  ShieldCheckIcon,
-  XMarkIcon,
-} from "@heroicons/react/24/outline";
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -22,7 +15,7 @@ export default function Example() {
         <div className='mx-auto max-w-7xl px-6'>
           <div className='flex items-center justify-between py-6 md:justify-start md:space-x-10'>
             <div className='flex justify-start lg:w-0 lg:flex-1'>
-              <Link href='/search'>
+              <Link href='/'>
                 <a>
                   <span className='sr-only'>The Plants Project</span>
 
@@ -57,7 +50,7 @@ export default function Example() {
               </Link>
             </Popover.Group>
             <div className='hidden items-center justify-end md:flex md:flex-1 lg:w-0'>
-              <Link href='/search' passHref>
+              <Link href='/' passHref>
                 <button className='ml-8 inline-flex items-center justify-center whitespace-nowrap rounded-md border border-transparent bg-green px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-green-700'>
                   QUIZ
                 </button>
@@ -109,21 +102,14 @@ export default function Example() {
                   </Link>
 
                   <Link
-                    href='/'
-                    className='text-base font-medium text-gray-900 hover:text-gray-700'
-                  >
-                    MENTOR
-                  </Link>
-
-                  <Link
-                    href='/'
+                    href='/submissions'
                     className='text-base font-medium text-gray-900 hover:text-gray-700'
                   >
                     SUBMISSIONS
                   </Link>
 
                   <Link
-                    href='/'
+                    href='/search'
                     className='text-base font-medium text-gray-900 hover:text-gray-700'
                   >
                     DATABASE
