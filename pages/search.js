@@ -1,5 +1,5 @@
 import Head from "next/head";
-import PlantsList from "../components/searchPlants";
+import PlantsList from "../components/searchP";
 import Footer from "../components/pl-footer";
 import Menu from "../components/pl-menu";
 

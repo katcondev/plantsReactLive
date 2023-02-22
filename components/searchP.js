@@ -81,7 +81,7 @@ const SIndexPage = () => {
               key={record.id}
               className='mx-auto py-6 grid gap-4 grid-cols-1 md:grid-cols-1 lg:grid-cols-3 h-{400}'
             >
-              <div className='max-w-sm py-6 rounded overflow-hidden shadow-lg transform transition duration-300 hover:scale-105'>
+              <div className='max-w-sm rounded overflow-hidden shadow-lg transform transition duration-300 hover:scale-105'>
                 <Image
                   src={record.fields.Image[0].url}
                   width={record.fields.Image[0].width}
@@ -123,9 +123,7 @@ const SIndexPage = () => {
             </div>
           ))
         ) : (
-          <p className='text-center text-xl font-bold py-6'>
-            Updatiing records...
-          </p>
+          <p className='text-center text-xl font-bold'>No records found...</p>
         )}
       </div>
     </div>
