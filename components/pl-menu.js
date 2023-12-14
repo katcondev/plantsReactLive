@@ -52,7 +52,7 @@ export default function Example() {
             <div className='hidden items-center justify-end md:flex md:flex-1 lg:w-0'>
               <Link href='/' passHref>
                 <button className='ml-8 inline-flex items-center justify-center whitespace-nowrap rounded-md border border-transparent bg-green px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-green-700'>
-                  QUIZ
+                  SUPPORT
                 </button>
               </Link>
             </div>
@@ -118,7 +118,7 @@ export default function Example() {
                 <div>
                   <Link href='/submissions' passHref>
                     <button className='flex w-full items-center justify-center rounded-md border border-transparent bg-green px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-green-700'>
-                      QUIZ
+                      SUPPORT
                     </button>
                   </Link>
                 </div>

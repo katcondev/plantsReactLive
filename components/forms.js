@@ -27,8 +27,22 @@ const Form = () => {
 
   const handleChange = (event) => {
     if (event.target.type === "file") {
+      const selectedFile = event.target.files[0];
+
+      // Check if the selected file is an image and has a valid extension
+      if (
+        selectedFile &&
+        !["image/jpeg", "image/jpg"].includes(selectedFile.type)
+      ) {
+        setMessage({
+          type: "failed",
+          content: "Please select a valid JPEG or JPG image.",
+        });
+        return;
+      }
+
       setImage({
-        file: event.target.files[0],
+        file: selectedFile,
       });
     } else {
       setFormData({

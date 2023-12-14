@@ -74,7 +74,7 @@ const SIndexPage = () => {
           placeholder: "Search",
         }}
       />
-      <div className='flex flex-wrap'>
+      <div className='flex flex-wrap mx-auto max-w-7xl'>
         {filteredData.length > 0 ? (
           filteredData.map((record) => (
             <div
