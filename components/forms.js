@@ -190,7 +190,7 @@ const Form = () => {
       </div>
       <div className='mb-4'>
         <label className='block font-medium mb-2' htmlFor='comName'>
-          Company Name
+          Common Name
         </label>
         <input
           type='text'

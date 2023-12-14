@@ -7,7 +7,7 @@ const IndexPage = () => {
   useEffect(() => {
     async function fetchData() {
       const res = await fetch(
-        `https://api.airtable.com/v0/${process.env.NEXT_PUBLIC_BASE_ID}/Plants`,
+        `https://api.airtable.com/v0/${process.env.NEXT_PUBLIC_BASE_ID}/Plants?filterByFormula=AND(Approved)`,
         {
           headers: {
             Authorization: `Bearer ${process.env.NEXT_PUBLIC_AT_KEY}`,
