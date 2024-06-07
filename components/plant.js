@@ -22,7 +22,7 @@ const IndexPage = () => {
 
   return (
     <div className='flex flex-wrap mx-auto max-w-7xl'>
-      {data.length > 0 ? (
+      {data && data.length > 0 ? (
         data.map((record) => (
           <div key={record.id} className=' p-4'>
             <div className='max-w-sm rounded overflow-hidden shadow-lg transform transition duration-300 hover:scale-105'>
